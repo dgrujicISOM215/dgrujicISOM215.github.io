@@ -1,1 +1,1 @@
-# dgrujicISOM215.github.io/index.html
+# dgrujicISOM215.github.io/mobile.html
