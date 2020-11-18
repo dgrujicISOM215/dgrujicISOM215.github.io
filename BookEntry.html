@@ -8,7 +8,7 @@
 	  body {background-color: #BD8EFF;}
 	  
       fieldset {
-         width: 25%;
+         width: 75%;
          border: 2px solid #cccccc;
       }
 
@@ -23,28 +23,27 @@
          padding: 3px;
       }
 
-    </style>
+   </style>
 </head>
 
 <body>
   <h1>Send a Text</h1>
-	
-<textarea id="mymessage" name="mymessage" rows="3" cols="75" maxlength="300">
-send a message to David
-</textarea>
   <form action="http://www.isom.biz/text/sms6.php" method="post">
-
   <fieldset>
-    <p><label for="TextNumber">Text Number: </label>
+    <label for="TextNumber">Text Number: </label>
     <input required type="tel" id="TextNumber" name="TextNumber" 
 	maxlength="12" placeholder="6176161000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" />
 	<br><br>
   <small>Format: 6176261000</small>
-	</p>
+  <br>
+  <br>  <label>Text Message: </label><br>
+  <textarea required id="mymessage" placeholder="Whazzup?" name="mymessage" rows = "3" cols ="75" maxlength="300"></textarea>
   </fieldset>
   
   <p><input type="submit" value="Send Text" /></p>
   
+  </form>
+</body>
 
   </form>
 </body>
